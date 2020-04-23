@@ -1,11 +1,19 @@
+# Repo cloned from nigelpoulton, then updated to work with mocha/chai and circleci 2.0.
+
+# To test mocha and chai:
+
+    1. Clone Repo
+    2. npm i
+    3. npm test
+
 # Test app for demonstrating containerizing web app
 
 Super-simple Node web app for containerization demos
 
 ## Instructions for use
 
-1. Fork the repo 
+1. Fork the repo
 2. Clone repo locally
-3. Build Docker iamge `docker image build -t <tag> .` from within the root directory of the repo 
+3. Build Docker iamge `docker image build -t <tag> .` from within the root directory of the repo
 4. Push image to container registry
 5. Run container/Pod using the created image
