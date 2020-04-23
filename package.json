@@ -1,16 +1,19 @@
 {
-  "name": "container-web-test",
-  "private": true,
-  "version": "0.0.3",
-  "description": "Demo app for Web container demonstrations",
-  "main": "app.js",
-  "author": "Nigel Poulton <nigelpoulton@hotmail.com>",
-  "license": "May contain vulnerabilities!",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.3.0",
-    "express": "^4.17.1",
-    "mocha": "^7.1.1",
-    "pug": "2.0.4"
-  }
+	"name": "container-web-test",
+	"private": true,
+	"version": "0.0.3",
+	"description": "Demo app for Web container demonstrations",
+	"main": "app.js",
+	"author": "Nigel Poulton <nigelpoulton@hotmail.com>",
+	"license": "May contain vulnerabilities!",
+	"scripts": {
+		"test": "mocha"
+	},
+	"dependencies": {
+		"chai": "^4.2.0",
+		"chai-http": "^4.3.0",
+		"express": "^4.17.1",
+		"mocha": "^7.1.1",
+		"pug": "2.0.4"
+	}
 }
