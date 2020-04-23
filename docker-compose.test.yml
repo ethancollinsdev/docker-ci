@@ -1,0 +1,4 @@
+sut:
+    build: .
+    command: npm i
+    command: npm test
