@@ -12,5 +12,8 @@ app.get("/", function (req, res) {
 	res.render("home", {});
 });
 
-app.listen(8080);
-module.exports = app;
+let server = app.listen(8080);
+module.exports = {
+	app,
+	server,
+};

@@ -3,7 +3,10 @@
 
 let chai = require("chai");
 let chaiHttp = require("chai-http");
-let app = require("../app");
+
+const { app, server } = require("../app");
+
+// let app = require("../app");
 let should = chai.should();
 
 chai.use(chaiHttp);
@@ -14,6 +17,7 @@ describe("GET /", function () {
 			.get("/")
 			.end((err, res) => {
 				res.should.have.status(200);
+				server.close();
 				done();
 			});
 	});
