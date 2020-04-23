@@ -1,4 +1,7 @@
 sut:
     build: .
-    command: npm i
     command: npm test
+    depends_on:
+        - install
+    install:
+        command: npm i
