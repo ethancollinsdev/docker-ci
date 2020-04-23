@@ -1,0 +1,33 @@
+# The deployment section should be excluded until
+# it is explicitly included in module 5
+
+#deployment:
+#  dockerhub:
+#    branch: master
+#    commands:
+#      - $DOCKER_HUB_TRIGGER
+
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2.1
+jobs:
+    build:
+        docker:
+            # specify the version you desire here
+            - image: circleci/node:8.11
+
+            # Specify service dependencies here if necessary
+            # CircleCI maintains a library of pre-built images
+            # documented at https://circleci.com/docs/2.0/circleci-images/
+            # - image: circleci/mongo:3.4.4
+
+        # working_directory: ~/repo
+
+        steps:
+            - checkout
+
+            - run: npm i
+
+            # run tests!
+            - run: mocha
